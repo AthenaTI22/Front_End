@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.palestrantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.palestrante {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.palestrante img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;          /* altura fixa para manter círculo */
+  border-radius: 50%;
+  object-fit: cover;      /* evita distorção */
+  display: block;
+  margin: 0 auto 10px;    /* centraliza e dá espaço embaixo */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;     /* espaçamento entre label e input */
+}
+
+input, button, fieldset {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: 10px;    /* espaço entre inputs */
+  box-sizing: border-box; /* para evitar que padding aumente o tamanho */
+}
+
+fieldset {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .palestrantes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    margin: 10px 5px;
+  }
+}
