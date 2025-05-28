@@ -14,18 +14,35 @@ header {
   text-align: center;
 }
 
+h1, h2, h3 {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+}
+
 section {
   padding: 20px;
-  margin: 10px;
+  margin: 10px auto;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 900px;
 }
 
 .palestrantes {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-around;
 }
 
 .palestrante {
@@ -36,20 +53,23 @@ section {
 .palestrante img {
   width: 100%;
   max-width: 150px;
-  height: 150px;          /* altura fixa para manter círculo */
+  height: 150px;
   border-radius: 50%;
-  object-fit: cover;      /* evita distorção */
+  object-fit: cover;
   display: block;
-  margin: 0 auto 10px;    /* centraliza e dá espaço embaixo */
+  margin: 0 auto 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 label {
-  margin: 10px 0 5px;     /* espaçamento entre label e input */
+  margin: 10px 0 5px;
+  display: block;
 }
 
 input, button, fieldset {
@@ -57,11 +77,17 @@ input, button, fieldset {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, button:focus {
+  outline: 2px solid #0077cc;
+  background-color: #eef7ff;
 }
 
 input {
-  margin-bottom: 10px;    /* espaço entre inputs */
-  box-sizing: border-box; /* para evitar que padding aumente o tamanho */
+  margin-bottom: 10px;
 }
 
 fieldset {
@@ -69,6 +95,11 @@ fieldset {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
+}
+
+fieldset label {
+  display: block;
+  margin: 5px 0;
 }
 
 button {

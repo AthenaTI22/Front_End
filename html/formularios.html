@@ -43,11 +43,18 @@
 
       <fieldset>
         <legend>Tipo de ingresso:</legend>
-        <label><input type="radio" name="ingresso" value="presencial" required /> Presencial</label>
-        <label><input type="radio" name="ingresso" value="online" required /> Online</label>
+        <label for="presencial">
+          <input type="radio" id="presencial" name="ingresso" value="presencial" required /> Presencial
+        </label>
+        <label for="online">
+          <input type="radio" id="online" name="ingresso" value="online" required /> Online
+        </label>
       </fieldset>
 
-      <label><input type="checkbox" required /> Aceito os termos e condições</label>
+      <label for="termos">
+        <input type="checkbox" id="termos" name="termos" value="aceito" required />
+        Aceito os termos e condições
+      </label>
 
       <button type="submit">Enviar inscrição</button>
     </form>
