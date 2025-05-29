@@ -4,7 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechFuture Summit</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .palestrantes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .palestrante {
+      flex: 1 1 200px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .palestrante img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .palestrante h3,
+    .palestrante p {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, input, fieldset {
+      margin: 10px 0;
+    }
+
+    input, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #005fa3;
+    }
+
+    @media (max-width: 600px) {
+      .palestrantes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        margin: 10px 5px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,12 +109,13 @@
   <section class="palestrantes">
     <h2>Palestrantes</h2>
     <div class="palestrante">
-      <img src="palestrante1.jpg" alt="João Silva">
+      <img src="https://images.unsplash.com/photo-1633187841127-8b3e776b6a41?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="João Silva">
       <h3>João Silva</h3>
       <p>Especialista em Inteligência Artificial e líder na TechMind.</p>
     </div>
+    
     <div class="palestrante">
-      <img src="palestrante2.jpg" alt="Maria Oliveira">
+      <img src="https://images.unsplash.com/photo-1678647971917-743ecbaa6da8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maria Oliveira">
       <h3>Maria Oliveira</h3>
       <p>UX Designer premiada e autora de “Design com Propósito”.</p>
     </div>
